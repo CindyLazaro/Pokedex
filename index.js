@@ -29,16 +29,12 @@ io.on('connection', function(socket){
   });
 });
 
-//var result = await resolveAfter2Seconds();
-  
- // console.log(result);
-  
   }
   
 function resolveAfter2Seconds() {
   return new Promise(resolve => {
     setTimeout(() => {
-      //resolve('Resuelto');
+      resolve('Resuelto');
     }, 2000);
   });
   
@@ -46,37 +42,7 @@ function resolveAfter2Seconds() {
 asyncCall();
  
 
-  //io.emit('chat message', msg);
-  //});
-//});
-
- /*async function asyncCall() {
-  console.log('calling');
-  var result = await resolveAfter2Seconds();
-  console.log(result);
-  // expected output: "resolved"
-}
-
-function resolveAfter2Seconds() {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve('resolved');
-    }, 2000);
-  });
-}
-asyncCall();*/
-
-
-
 http.listen(4000, function(){
   console.log('listening on *:4000');
 });
     
-	 //io.on('connection', function(socket){   console.log('Usuario Conectado');  socket.on('disconnect', function(){    console.log('Usuario Desconectado');  });});
-//io.on('connection', function(socket){
-  //socket.on('chat message', function(msg){
-    //console.log('message: ' + msg);
-  //});
-//});
-
-//io.on('connection', function(socket){  console.log('Usuario conectado');});
